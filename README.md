@@ -23,3 +23,9 @@ Plugins include:
 Default exports are discouraged with this boilerplate. ESLint and Prettier are configured to throw errors if using default exports and not named exports. Named exports are preferred since it makes refractoring code easier.
 
 ESLint is configured to use airbnb eslint config.
+
+## Bundle Analyzer
+
+The bundle analyzer uses @next/bundle-analyzer and outputs to static HTML files, one for server and the other for client.
+
+You can use webpack-bundle-analyzer, if you want to take more control of the bundle analyzer. Refer to the next.config.js file for more information on how to do that, which also contains example code of using webpack-bundle-analyzer.
