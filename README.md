@@ -7,6 +7,7 @@ Minimal boilerplate for running a Next.js app in Typescript
 - ESLint
 - TypeScript
 - Bundle analyzer
+- ESLint-Prettier integration with VS Code
 
 ## ESLint Configuration
 
