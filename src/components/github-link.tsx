@@ -1,9 +1,11 @@
 import React from 'react';
 
-export function GithubLink() {
-  return (
-    <a href="https://github.com/shadez95/nextjs-typescript-boilerplate">
-      Github
-    </a>
-  );
+interface GithubLinkProps {
+  link: string;
 }
+
+export const GithubLink: React.FC<GithubLinkProps> = ({ link }): JSX.Element => (
+  <a href={link}>
+    Github
+  </a>
+);
