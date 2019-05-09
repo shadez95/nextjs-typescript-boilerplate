@@ -1,8 +1,8 @@
 const withTypescript = require('@zeit/next-typescript');
-const withBundleAnalyzer = require("@next/bundle-analyzer")({ enabled: process.env.ANALYZE });
-module.exports = withTypescript(
-  withBundleAnalyzer({})
-);
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+module.exports = withTypescript(withBundleAnalyzer({}));
 
 // ---------------------------------
 
