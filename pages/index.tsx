@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Help } from '../src/components/help';
 
-export const Home: React.FC<{}> = (): JSX.Element => {
+const Home: React.FC<{}> = (): JSX.Element => {
   const nextjs = 'Next.js!';
   return (
     <div>
@@ -15,3 +15,5 @@ export const Home: React.FC<{}> = (): JSX.Element => {
     </div>
   );
 };
+
+export default Home;

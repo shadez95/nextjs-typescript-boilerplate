@@ -29,6 +29,18 @@ module.exports = {
     'import/no-default-export': 'error', // Discourage use of default exports
     'import/prefer-default-export': 'off', // Discourage use of default exports
   },
+  overrides: [
+    {
+      // Need default exports for tsx files in pages
+      // this is required by Next.js
+      files: ["pages/*.tsx"],
+      // "excludedFiles": "*.test.js",
+      rules: {
+        'import/no-default-export': 'off',
+        'import/prefer-default-export': 'on',
+      }
+    }
+  ],
   settings: {
     react: {
       version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
