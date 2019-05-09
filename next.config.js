@@ -1,15 +1,15 @@
 // Trying to maintain backwards compatibility for older node versions
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const withTypescript = require('@zeit/next-typescript');
+/* eslint-disable @typescript-eslint/no-var-requires */
 
-// Below is fine because this file is only ran when building
-// or for development
-// eslint-disable-next-line import/no-extraneous-dependencies
+const withTypescript = require('@zeit/next-typescript');
+const withCSS = require('@zeit/next-css');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
-module.exports = withTypescript(withBundleAnalyzer({}));
+module.exports = withTypescript(withBundleAnalyzer(withCSS({
+  cssModules: true,
+})));
 
 // ---------------------------------
 
