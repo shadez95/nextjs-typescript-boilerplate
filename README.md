@@ -8,6 +8,10 @@ To use just clone the repo like so...
 git clone --depth=1 https://github.com/shadez95/nextjs-typescript-boilerplate.git name-of-app
 ```
 
+or download zipped folder.
+
+Please be aware when cloning with depth set to 1, you will still see the last commit I did here. If you want a completely clear git history of commits, download zipped version.
+
 ## Features
 
 - ESLint
