@@ -2,6 +2,12 @@
 
 Minimal boilerplate for running a Next.js app in Typescript
 
+To use just clone the repo like so...
+
+```
+git clone --depth=1 https://github.com/shadez95/nextjs-typescript-boilerplate.git name-of-app
+```
+
 ## Features
 
 - ESLint
